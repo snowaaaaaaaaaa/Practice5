@@ -27,6 +27,10 @@ public class ChangeItemCommand implements ConsoleCommand {
         }
     }
 
+    /**
+     *
+     */
+    @Override
     public void undo() {
         if (index >= 0 && index < items.size()) {
             Item2d item = items.get(index);
